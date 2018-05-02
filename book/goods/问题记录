@@ -1,0 +1,16 @@
+1.超链接中文乱码，
+	1查看 是否设置如下
+		response.setCharacterEncoding("utf-8");
+		response.setContentType("text/html;charset=utf-8");
+		request.setCharacterEncoding("utf-8");
+	
+	2.查看tomat是否设置URIEncoding
+	
+	3.不论是接受还是发送都设置了的，还是乱码，在tomcat中设置加入useBodyEncodingForURI="true"
+		<Connector connectionTimeout="20000" port="8080"
+		protocol="HTTP/1.1" redirectPort="8443" URIEncoding="utf-8"
+		useBodyEncodingForURI="true"/>
+
+2.过滤器:
+	实现javax.servlet.filter接口
+	web.xml配置filter都在哪些地方进行过滤

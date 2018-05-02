@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=WebRoot/adminjsps/admin/category/edit2.jsp,WebRoot/adminjsps/admin/book/desc.jsp,WebRoot/adminjsps/admin/category/add2.jsp
+validator.Unchecked=
